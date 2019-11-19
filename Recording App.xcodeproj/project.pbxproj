@@ -14,6 +14,7 @@
 		678331B1238321F5002FF63C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 678331AF238321F5002FF63C /* LaunchScreen.storyboard */; };
 		E1AD0DE1238346020078B7BA /* RecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AD0DE0238346020078B7BA /* RecordingViewController.swift */; };
 		E1AD0DE3238346B90078B7BA /* RecordingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AD0DE2238346B90078B7BA /* RecordingTableViewController.swift */; };
+		E1C84D78238453C900B8C6C2 /* Recording.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C84D77238453C900B8C6C2 /* Recording.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		678331B2238321F5002FF63C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1AD0DE0238346020078B7BA /* RecordingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingViewController.swift; sourceTree = "<group>"; };
 		E1AD0DE2238346B90078B7BA /* RecordingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingTableViewController.swift; sourceTree = "<group>"; };
+		E1C84D77238453C900B8C6C2 /* Recording.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recording.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				E1AD0DDF238335E10078B7BA /* Resources */,
 				678331AD238321F5002FF63C /* Assets.xcassets */,
 				678331AA238321F3002FF63C /* Main.storyboard */,
+				E1C84D77238453C900B8C6C2 /* Recording.swift */,
 				E1AD0DE0238346020078B7BA /* RecordingViewController.swift */,
 				E1AD0DE2238346B90078B7BA /* RecordingTableViewController.swift */,
 				678331B2238321F5002FF63C /* Info.plist */,
@@ -153,6 +156,7 @@
 				E1AD0DE3238346B90078B7BA /* RecordingTableViewController.swift in Sources */,
 				E1AD0DE1238346020078B7BA /* RecordingViewController.swift in Sources */,
 				678331A7238321F3002FF63C /* SceneDelegate.swift in Sources */,
+				E1C84D78238453C900B8C6C2 /* Recording.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

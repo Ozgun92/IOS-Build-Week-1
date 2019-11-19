@@ -22,7 +22,7 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
                                 </state>
                                 <connections>
-                                    <action selector="RecordButtonA:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QT5-w1-9MP"/>
+                                    <action selector="recordButtonA:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h27-Zy-XQ4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IML-Hk-xKF" userLabel="Folders Button">

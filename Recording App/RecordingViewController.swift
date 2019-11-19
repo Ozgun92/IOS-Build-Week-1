@@ -16,6 +16,7 @@ class RecordingViewController: UIViewController, AVAudioPlayerDelegate, AVAudioR
 
     @IBOutlet weak var recordButtonO: UIButton!
     @IBAction func recordButtonA(_ sender: Any) {
+        
        
         let audioSession: AVAudioSession = AVAudioSession.sharedInstance()
 
@@ -31,8 +32,8 @@ class RecordingViewController: UIViewController, AVAudioPlayerDelegate, AVAudioR
 
 
                     //get documnets directory
-                    let documentsDirectory = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
-                    let fullPath = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)
+                    let fullPath = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)[0]
+                    let documentsDirectory: AnyObject = fullPath as AnyObject
                     
 
                     //create AnyObject of settings
@@ -43,13 +44,16 @@ class RecordingViewController: UIViewController, AVAudioPlayerDelegate, AVAudioR
                         AVLinearPCMBitDepthKey : 16,
                         AVEncoderAudioQualityKey : AVAudioQuality.max.rawValue] as [String : Any]
 
-                    //record
-                    try self.audioRecorder = AVAudioRecorder(URL: fullPath, settings: settings)
+                 do {
+                        try FileManager.default.createDirectory(atPath: fullPath, withIntermediateDirectories: false, attributes: nil)
+                    } catch let error as NSError {
+                        print(error.localizedDescription);
+                    }
 
                 } else{
                     print("not granted")
                 }
-                } as! PermissionBlock as! PermissionBlock)
+            } )
         }
     }
     @IBOutlet weak var saveButtonO: UIButton!
@@ -112,15 +116,6 @@ class RecordingViewController: UIViewController, AVAudioPlayerDelegate, AVAudioR
         }
     }
 
- */
-    func record() {
-        //init
-        
-
-    }
-
-
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
